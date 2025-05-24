@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <title>Złota Kapsuła Czasu V6</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="sidebar">
+        <h2>🌟 Kapsuła</h2>
+        <ul id="menu">
+            <li data-tab="history">🕰 Historia</li>
+            <li data-tab="add">📝 Dodaj wspomnienie</li>
+            <li data-tab="about">ℹ️ O aplikacji</li>
+        </ul>
+    </div>
+    <div class="content">
+        <section id="history" class="tab active">
+            <h1>🕰 Historia wspomnień</h1>
+            <div id="memoryLibrary"></div>
+        </section>
+        <section id="add" class="tab">
+            <h1>📝 Dodaj wspomnienie</h1>
+            <input type="file" id="fileInput" multiple><br><br>
+            <input type="file" id="iconInput" accept="image/*"><br><small>Dodaj ikonę wspomnienia</small><br><br>
+            <textarea id="textInput" placeholder="Napisz coś..."></textarea><br><br>
+            <label for="dateInput">Odblokuj w dniu:</label><br>
+            <input type="datetime-local" id="dateInput"><br><br>
+            <button onclick="saveMemory()">Zapisz wspomnienie</button>
+            <p id="status"></p>
+        </section>
+        <section id="about" class="tab">
+            <h1>ℹ️ O aplikacji</h1>
+            <p>To jest Złota Kapsuła Czasu V6 – z jeszcze lepszą obsługą zakładek i ciemnym motywem!</p>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

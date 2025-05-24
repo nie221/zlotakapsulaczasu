@@ -1,0 +1,103 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #1e1e1e, #2f4f2f);
+    color: #dcdcdc;
+    margin: 0;
+    display: flex;
+}
+.sidebar {
+    background: #222;
+    width: 200px;
+    height: 100vh;
+    padding: 20px;
+}
+.sidebar h2 {
+    color: #90ee90;
+}
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+.sidebar li {
+    padding: 10px 0;
+    cursor: pointer;
+}
+.sidebar li:hover {
+    background-color: #333;
+}
+.content {
+    padding: 20px;
+    flex-grow: 1;
+    transition: opacity 0.5s ease;
+}
+.tab {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+.tab.active {
+    display: block;
+    opacity: 1;
+}
+h1 {
+    color: #90ee90;
+}
+textarea, input[type="file"], input[type="datetime-local"] {
+    width: 300px;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+button {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #45a049;
+}
+#memoryLibrary {
+    margin-top: 20px;
+    background: #333;
+    padding: 10px;
+    border-radius: 10px;
+}
+.memoryItem {
+    border-bottom: 1px solid #555;
+    padding: 5px 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.memoryItem img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.memoryItem:last-child {
+    border-bottom: none;
+}
+
+
+/* Responsywność */
+body { max-width: 100%; margin: auto; }
+.menu { display: flex; flex-wrap: wrap; }
+.zakladka { width: 100%; }
+
+
+/* Jadeitowe okienka wspomnień */
+.wspomnienie {
+  background: linear-gradient(135deg, #00a86b, #50c878);
+  border: 3px solid #008b5d;
+  border-radius: 15px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 12px rgba(0, 138, 93, 0.3);
+  color: #fff;
+  transition: transform 0.3s;
+}
+.wspomnienie:hover {
+  transform: scale(1.02);
+}
